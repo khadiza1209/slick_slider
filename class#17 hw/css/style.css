@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.sliders{
+    position: relative;
+}
+.one{
+    background: url(../images/one.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+   
+}
+.two{
+    background: url(../images/two.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    
+}
+.three{
+    background: url(../images/three.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+
+}
+.left_one{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 40px;
+    color: #fff;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    z-index: 999;
+    cursor: pointer;
+}
+.right_one{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 40px;
+    color: #fff;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    z-index: 999;
+    cursor: pointer;
+}
+.left_one:hover{
+    font-size: 50px;
+    color: rgb(205, 204, 204);
+}
+.right_one:hover{
+    font-size: 50px;
+    color: rgb(205, 204, 204);
+}
+.overlay{
+    background: rgb(0,0,0,0.6);
+    padding: 400px 0;
+}
+.slick-dots{
+    position: absolute;
+    display: flex;
+    bottom:45px;
+    list-style: none;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slick-dots li{
+    font-size: 0;
+}
+button{
+    height: 20px;
+    width: 20px;
+    text-indent: -9999px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+    margin-right:10px ;
+}
+li.slick-active button {
+   background-color:red;
+}
